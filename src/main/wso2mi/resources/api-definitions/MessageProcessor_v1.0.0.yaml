@@ -1,0 +1,108 @@
+openapi: 3.0.1
+info:
+  title: MessageProcessor
+  description: API Definition of MessageProcessor
+  version: 1.0.0
+servers:
+- url: http://localhost:8290/default
+paths:
+  /getMarketActivity:
+    post:
+      requestBody:
+        description: Sample Payload
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                payload:
+                  type: object
+          application/xml:
+            schema:
+              type: object
+              xml:
+                name: payload
+        required: false
+      responses:
+        default:
+          description: Default response
+  /getSimpleQuote:
+    post:
+      requestBody:
+        description: Sample Payload
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                payload:
+                  type: object
+          application/xml:
+            schema:
+              type: object
+              xml:
+                name: payload
+        required: false
+      responses:
+        default:
+          description: Default response
+  /placeOrder:
+    post:
+      requestBody:
+        description: Sample Payload
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                payload:
+                  type: object
+          application/xml:
+            schema:
+              type: object
+              xml:
+                name: payload
+        required: false
+      responses:
+        default:
+          description: Default response
+  /getFullQuote:
+    post:
+      requestBody:
+        description: Sample Payload
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                payload:
+                  type: object
+          application/xml:
+            schema:
+              type: object
+              xml:
+                name: payload
+        required: false
+      responses:
+        default:
+          description: Default response
+  /getQuote:
+    post:
+      requestBody:
+        description: Sample Payload
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                payload:
+                  type: object
+          application/xml:
+            schema:
+              type: object
+              xml:
+                name: payload
+        required: false
+      responses:
+        default:
+          description: Default response
