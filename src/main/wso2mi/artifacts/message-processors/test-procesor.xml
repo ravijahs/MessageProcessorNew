@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messageProcessor class="com.age.message.processor.dedup.DedupMessageProcessor" name="test-procesor" messageStore="test-store" xmlns="http://ws.apache.org/ns/synapse">
+    <parameter name="cron">0 15 10 * * MON-FRI</parameter>
+    <parameter name="interval">15000</parameter>
+</messageProcessor>
